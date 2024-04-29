@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/zenn-sample-dropdown-menu.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo"><a href="/">YH</a></h1>
+        <nav class="headerNav" aria-label="グローバルナビゲーション">
+          <a href="/" class="headerNav__link">Home</a>
+          <div class="headerNav__dropdownWrapper">
+            <button
+              type="button"
+              aria-controls="headerDropdown"
+              aria-label="サービスメニュー"
+              class="headerNav__link headerNav__dropdown js-dropdownTrigger"
+            >
+              Services
+            </button>
+            <ul id="headerDropdown" class="headerDropdown js-dropdownList">
+              <li role="none" class="headerDropdown__item js-dropdownListItem">
+                <a class="headerDropdown__link" href="/websites">Websites</a>
+              </li>
+              <li role="none" class="headerDropdown__item js-dropdownListItem">
+                <a class="headerDropdown__link" href="/ecommerce">UI/UX</a>
+              </li>
+              <li role="none" class="headerDropdown__item js-dropdownListItem">
+                <a class="headerDropdown__link" href="/ecommerce">eCommerce</a>
+              </li>
+              <li role="none" class="headerDropdown__item js-dropdownListItem">
+                <a class="headerDropdown__link" href="/mobile-app"
+                  >Mobile App</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="headerNav__link" class="headerNav__link">About</a>
+        </nav>
+      </div>
+    </header>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

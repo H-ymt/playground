@@ -30,6 +30,15 @@ body {
   min-height: 100vh;
 }
 
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+li::marker {
+  color: #5c5c5c;
+}
+
 h1 {
   font-size: 2.6em;
   line-height: 1.1;
@@ -40,11 +49,6 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
 }
 
 button:focus-visible {
